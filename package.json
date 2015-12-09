@@ -1,0 +1,20 @@
+{
+  "title": "Search Image By Image",
+  "name": "xpi",
+  "version": "0.0.1",
+  "description": "Search Image with Google, Yandex, Baidu",
+  "main": "index.js",
+  "author": "Steely Wing",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "icon": "icon-48.png",
+  "license": "MIT",
+  "keywords": [
+    "search",
+    "google",
+    "Yandex",
+    "Baidu"
+  ]
+}
