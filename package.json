@@ -1,7 +1,7 @@
 {
   "title": "Search Image By Image",
-  "name": "xpi",
-  "version": "0.0.1",
+  "name": "search-image-by-image",
+  "version": "0.0.2",
   "description": "Search Image with Google, Yandex, Baidu",
   "main": "index.js",
   "author": "Steely Wing",
