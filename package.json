@@ -1,20 +1,22 @@
 {
   "title": "Search Image By Image",
   "name": "search-image-by-image",
-  "version": "0.0.2",
-  "description": "Search Image with Google, Yandex, Baidu",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Search Image with Google, TinEye, Yandex, Baidu",
+  "main": "main.js",
   "author": "Steely Wing",
   "engines": {
     "firefox": ">=38.0a1",
     "fennec": ">=38.0a1"
   },
-  "icon": "icon-48.png",
+  "icon": "resource://search-image-by-image/data/icon.png",
   "license": "MIT",
   "keywords": [
     "search",
+    "image",
+    "tineye",
     "google",
-    "Yandex",
-    "Baidu"
+    "yandex",
+    "baidu"
   ]
 }
