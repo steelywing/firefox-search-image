@@ -1,7 +1,7 @@
 {
   "title": "Search Image By Image",
   "name": "search-image-by-image",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Search Image with Google, TinEye, Yandex, Baidu",
   "main": "main.js",
   "author": "Steely Wing",

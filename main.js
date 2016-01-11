@@ -24,32 +24,40 @@ var searchEngines = [
     },
 ];
 
-var menuItems = [];
+var menuItems = [],
+    bgMenuItems = [];
+
 searchEngines.forEach(function (searchEngine) {
     menuItems.push(cm.Item({
         label: searchEngine.name,
         data: searchEngine.url,
         image: searchEngine.icon,
     }));
+    
+    bgMenuItems.push(cm.Item({
+        label: searchEngine.name,
+        data: searchEngine.url,
+        image: searchEngine.icon,
+    }));
 });
 
-var onclick = function (node, data) {
-    // This content script is run as browser window, so
-    // can not open URL with tabs here
-    self.postMessage({
-        url: data,
-        img: node.src,
-    });
+var searchImage = function (data) {
+    // console.log(data);
+    tabs.open(data.url.replace('{url}', encodeURIComponent(data.img)));
 };
 
 var searhMenu = cm.Menu({
     image: self.data.url('icon/search.png'),
     label: "Search image with",
     items: menuItems,
-    context: cm.SelectorContext('img'),
-    contentScript: 'self.on("click", ' + onclick + ');',
-    onMessage: function (data) {
-        // console.log(data);
-        tabs.open(data.url.replace('{url}', encodeURIComponent(data.img)));
-    },
+    contentScriptFile: self.data.url('content.js'),
+    onMessage: searchImage,
+});
+
+var searhBGMenu = cm.Menu({
+    image: self.data.url('icon/search.png'),
+    label: "Search background image with",
+    items: bgMenuItems,
+    contentScriptFile: self.data.url('bg-content.js'),
+    onMessage: searchImage,
 });
