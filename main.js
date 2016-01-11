@@ -8,6 +8,11 @@ var searchEngines = [
         url: 'https://www.google.com/searchbyimage?image_url={url}',
     },
     {
+        name: 'Bing',
+        icon: self.data.url('icon/bing.ico'),
+        url: 'https://www.bing.com/images/searchbyimage?FORM=IRSBIQ&cbir=sbi&imgurl={url}',
+    },
+    {
         name: 'TinEye',
         icon: self.data.url('icon/tineye.ico'),
         url: 'https://www.tineye.com/search/?&url={url}',
@@ -21,6 +26,11 @@ var searchEngines = [
         name: 'Baidu',
         icon: self.data.url('icon/baidu.ico'),
         url: 'http://image.baidu.com/n/pc_search?queryImageUrl={url}&fm=result_camera&uptype=paste',
+    },
+    {
+        name: 'Sogou',
+        icon: self.data.url('icon/sogou.ico'),
+        url: 'http://pic.sogou.com/ris?query={url}',
     },
 ];
 

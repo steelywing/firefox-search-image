@@ -1,8 +1,8 @@
 {
   "title": "Search Image By Image",
   "name": "search-image-by-image",
-  "version": "0.2.0",
-  "description": "Search Image with Google, TinEye, Yandex, Baidu",
+  "version": "0.3.0",
+  "description": "Search Image with Google, Bing, TinEye, Yandex, Baidu, Sogou",
   "main": "main.js",
   "author": "Steely Wing",
   "engines": {
@@ -17,6 +17,7 @@
     "tineye",
     "google",
     "yandex",
-    "baidu"
+    "baidu",
+    "sogou"
   ]
 }

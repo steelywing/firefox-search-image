@@ -1,5 +1,5 @@
 self.on("context", function (node) {
-    return ("src" in node);
+    return node.src && /^(ftp|https?):\/\//.test(node.src);
 });
 
 self.on("click", function (node, data) {

@@ -1,7 +1,7 @@
 self.on("context", function (node) {
-    return Boolean(/^url\((['"]?)(https?:\/\/.*)\1\)$/.exec(
+    return /^url\((['"]?)((ftp|https?):\/\/.*)\1\)$/.test(
         getComputedStyle(node).backgroundImage
-    ));
+    );
 });
 
 self.on("click", function (node, data) {
