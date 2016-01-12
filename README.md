@@ -1,5 +1,5 @@
 # Search By Image
-Search Image with Google, Yandex, Baidu
+Search Image with Google, Bing, TinEye, Yandex, Baidu, Sogou
 
 # Installation
 - https://addons.mozilla.org/en-US/firefox/addon/search-image-by-image/
